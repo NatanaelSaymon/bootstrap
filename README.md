@@ -120,11 +120,9 @@ Vamos usar o NPM para pegar essas libs:
 Jquery
 
 
-
 $ npm install jquery –save
 
 Popper
-
 
 
 $ npm install popper.js –save
@@ -154,7 +152,7 @@ Só que nesse caso vamos utilizar os arquivos locais (que baixamos pelo NPM), ao
         <title>Template Bootstrap</title>
 
         <!– CSS do Bootstrap –>
-        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     </head>
 
     <body>
@@ -171,7 +169,7 @@ Só que nesse caso vamos utilizar os arquivos locais (que baixamos pelo NPM), ao
         </div>
 
         <!– Primeiro o jQuery, depois o Popper.js, e depois o Bootstrap JS –>
-        <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <script src="./node_modules/popper.js/dist/popper.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>
