@@ -1,45 +1,40 @@
-Bootstrap
-
-" Sua única limitação é você mesmo!"
-
+# BOOTSTRAP
 
 *Bootstrap passo a passo: Guia para completo*
 
-O que é o Bootstrap?
+## O que é o Bootstrap?
 
 É o framework front-end, atraente e muito intuitivo, para o desenvolvimento web mais rápido e eficaz.
 
 O Bootstrap foi desenvolvido pelo Mark e Jacob no Twitter.
 
-Vantagens do Bootstrap
+## Vantagens do Bootstrap
 
 Ele é Mobile first, alem disso tem suporte para todos os navegadores populares.
 
 O pacote Bootstrap inclui:
 
-	* Scaffolding – O Bootstrap fornece uma estrutura básica com Sistema de Grid, estilos de link e plano de fundo. Falamos sobre isso com mais detalhes na seção de Estrutura Básica do Bootstrap
-	* CSS – Bootstrap vem com o recurso de configurações CSS globais, elementos HTML fundamentais estilizados e aprimorados com classes extensíveis e um sistema de grid avançado. Falamos disso com mais detalhes na seção Bootstrap com CSS.
-	* Componentes – O Bootstrap contém mais de uma dúzia de componentes reutilizáveis criados para fornecer iconografia, menus suspensos, navegação, alertas, pop-overs e muito mais. Isso é abordado em detalhes na seção Componentes de layout.
-	* Plugins JavaScript – Bootstrap contém mais de uma dúzia de plugins jQuery personalizados. Você pode de forma fácil incluir todos eles, ou um por um. Isto é coberto em detalhes na seção de Plugins do Bootstrap.
-	* Personalização – Você pode personalizar os componentes do Bootstrap, as variáveis LESS e os plugins do jQuery para obter sua própria versão. 
+- **Scaffolding** – O Bootstrap fornece uma estrutura básica com Sistema de Grid, estilos de link e plano de fundo. Falamos sobre isso com mais detalhes na seção de Estrutura Básica do Bootstrap
+- **CSS** – Bootstrap vem com o recurso de configurações CSS globais, elementos HTML fundamentais estilizados e aprimorados com classes extensíveis e um sistema de grid avançado. Falamos disso com mais detalhes na seção Bootstrap com CSS.
+- **Componentes** – O Bootstrap contém mais de uma dúzia de componentes reutilizáveis criados para fornecer iconografia, menus suspensos, navegação, alertas, pop-overs e muito mais. Isso é abordado em detalhes na seção Componentes de layout.
+- **Plugins JavaScript** – Bootstrap contém mais de uma dúzia de plugins jQuery personalizados. Você pode de forma fácil incluir todos eles, ou um por um. Isto é coberto em detalhes na seção de Plugins do Bootstrap.
+- **Personalização** – Você pode personalizar os componentes do Bootstrap, as variáveis LESS e os plugins do jQuery para obter sua própria versão. 
 
-==================================================================================
+---
 
-Configuração do Ambiente Bootstrap - CDN
+## Configuração do Ambiente Bootstrap - CDN
 
 A instalação do bootstrap é bem simples, vamos aprender a configurar a versão online do bootstrap:
 
-
-<!DOCTYPE html>
-<html lang="pt-br">
+````html
 <head>
-    <!– meta tags obrigatórias –>
+    <!–- meta tags obrigatórias -–>
     <meta charset="utf-8">
     <meta name="viewport" content=”width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Hello World</title>
 
-    <!– CSS do Bootstrap –>
+    <!–- CSS do Bootstrap -–>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
 </head>
 <body>
@@ -49,18 +44,17 @@ A instalação do bootstrap é bem simples, vamos aprender a configurar a versã
     <h1 class="display-3 m-5">Hello, Bootstrap!</h1>
 
     <p class=”lead”>
-        Use este documento como um template para iniciar qualquer projeto novo.
-        Tudo o que tem aqui é esse texto e um HTML inicial, bem básico.
+    Use este documento como um template para iniciar qualquer projeto novo.
+    Tudo o que tem aqui é esse texto e um HTML inicial, bem básico.
     </p>
     </div>
 
-    <!– Primeiro o jQuery, depois o Popper.js, e depois o Bootstrap JS –>
+    <!–- Primeiro o jQuery, depois o Popper.js, e depois o Bootstrap JS -–>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
 </body>
-</html>
-
+````
 
 Com esse template da forma como está configurado, você já é capaz de utilizar o bootstrap de forma completa. No VS Code basta digitar "b4 + tab" e todo esse template vai ser inserido na pagina, basta inserir o conteudo desse template.
 
