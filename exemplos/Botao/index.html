@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Botões e grupo de botões</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-ti-fit=no"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+
+    <body>
+
+        <div class="container">
+            <a class="btn btn-primary" href="#">Botão</a>
+            <br/><br/>
+
+            <button class="btn btn-primary">Botão</button>
+            <br/><br/>
+
+            <input class="btn btn-primary" type="submit" value="Botão">
+            <br/><br/>
+
+            <a class="btn btn-outline-primary" href="#">Botão</a> <!--botão só com bordas sem fundo-->
+            <br/><br/>
+
+            <a class="btn btn-primary btn-lg" href="#">Botão</a> <!--Botão maior-->
+            <br/><br/>
+
+            <a class="btn btn-primary btn-sm" href="#">Botão</a> <!--Botão menor-->
+            <br/><br/>
+
+            <a class="btn btn-primary btn-block" href="#">Botão</a> <!--Esse botão toma toda o espaço disponivel dentro de um container-->
+            <br/><br/>
+
+            <div class="btn-group"> <!--btn-group significa um grupo de botões.-->
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+            </div>
+
+            <div class="btn-group"> <!--btn-group significa um grupo de botões.-->
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+            </div>
+
+            <div class="btn-group-vertical"> <!--btn-group significa um grupo de botões na vertical.-->
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+                <a class="btn btn-primary" href="#">Botão</a>
+            </div>
+
+            <br/>
+            <button type="button" class="btn btn-primary btn-lg"><a class="btn btn-primary" href="#" role="button">Click aqui</a></button>
+            <button type="button" class="btn btn-primary btn-lg"><a class="btn btn-primary" href="#" role="button">Click aqui</a></button>
+            <button type="button" class="btn btn-primary btn-lg"><a class="btn btn-primary" href="#" role="button">Click aqui</a></button>
+            <button type="button" class="btn btn-primary btn-lg"><a class="btn btn-primary" href="https://www.google.com.br/" role="button">Click aqui</a></button>
+            <br/><br/>
+
+            <a class="btn btn-primary" href="#" role="button" aria-pressed="true">Click aqui</a>
+            <a class="btn btn-primary" href="#" role="button" aria-pressed="true">Click aqui</a>
+
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+        <!--
+            Botões
+
+            Classe usada para inserir um botão:
+
+            class="btn btn-primary" 
+
+            Podemos alterar o formato do botão: primary, secondary, success, danger, info, ligth, dark, link
+        -->
+    </body>
+</html>

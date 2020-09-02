@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <title>Carousel/Slide Show</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div id="slideshowExemplo" class="slide carousel">
+
+                <!--INDICADORES DE SLIDES-->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshowExemplo" data-slide-to="0" class="acitve"></li>
+                    <li data-target="#slideshowExemplo" data-slide-to="1"></li>
+                    <li data-target="#slideshowExemplo" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/avengers.jpg" class="w-100"/>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/img/spider.jpg" class="w-100"/>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/img/spider_man.jpg" class="w-100"/>
+                    </div>
+                </div>
+
+                <!--ADICIONANDO OS CONTROLES DA IMAGEM
+                Para isso, temos que adicionar um "id"
+                -->
+                <a class="carousel-control-prev" href="#slideshowExemplo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#slideshowExemplo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <!--
+            Div que faz o slide funcionar: SLIDE CAROUSEL
+
+            Div que engloba todas as imagens do carousel: CAROUSEL-INNER
+
+            Div usada para inserir as imagens: CAROUSEL-ITEM
+
+            Div usada para que a imagem use 100% da largura do espaço disponivel: W-100
+
+            ACTIVE: significa que "este item é o item ativo". Imagem que vai ser mostrada em primeiro.
+        -->
+    </body>
+
+</html>
