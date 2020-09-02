@@ -22,7 +22,7 @@ O pacote Bootstrap inclui:
 
 ---
 
-## Configuração do Ambiente Bootstrap - CDN
+## CONFIGURAÇÃO DO AMBIENTE BOOTSTRAP - CDN
 
 A instalação do bootstrap é bem simples, vamos aprender a configurar a versão online do bootstrap:
 
@@ -62,49 +62,34 @@ Agora vamos abrir esse pagina em um navegador, para ver o resultado:
 
 Na página Hello World que desenvolvemos, colocamos algumas classes nas tags HTML. Não escrevemos código CSS, mas percebemos que o visual da página já está com alguns estilos.
 
-Por exemplo, no código que fizemos tinham:
+---
 
-	* a classe .text-center que serve para colocar o texto no centro da div ;
-	* a classe .display-3 aumenta o tamanho do título e a .m-5 coloca margens nele;
-	* a classe .lead deixa o parágrafo com mais destaque;
+## CONFIGURAÇÃO DO AMBIENTE BOOTSTRAP - NPM
 
-
-Todas essas classes já vêm embutidas no Bootstrap 4.
-
-E é dessa forma que o Bootstrap funciona: de acordo com as classes que você colocar nos elementos HTML, o Bootstrap vai definir o visual e o comportamento daquele componente.
-
-==================================================================================
-
-Configuração do Ambiente Bootstrap - NPM
-
-Agora vamos baixar o Bootstrap 4 e usar essa instalação em um projeto, para isso devemos ter já instalado em nossas maquinas o Node.js e o NPM, um terminal de comando como (bash, git bash, powershell, etc) e um bom editor de código (VS Code).
-
-*Para criar um projeto: $ mkdir hello-bootstrap*
-
-*Para abrir o projeto: $ cd hello-bootstrap*
+Agora vamos **baixar** o Bootstrap 4 e usar essa instalação em um projeto, para isso devemos ter já instalado em nossas maquinas o **Node.js** e o **NPM**, um terminal de comando como (bash, git bash, powershell, etc) e um bom editor de código (VS Code).
 
 Para instalar o pacote do NPM no projeto (O comando npm cria um arquivo chamado package.json, com as informações necessarias sobre o nosso projeto)
 
-npm init -y
+- npm init -y
 
-Para abrir o projeto direto no VS Code: $ code .
+Para abrir o projeto direto no VS Code: $ **code .**
 
 Vamos usar o NPM para pegar essas libs:
 
-*Jquery: $ npm install jquery –save*
+**Jquery: $ npm install jquery –save**
 
 
-*Popper: $ npm install popper.js –save*
+**Popper: $ npm install popper.js –save**
 
-*Agora, vamos baixar o Bootstrap 4, também com o NPM: $ npm install bootstrap –save*
+**Agora, vamos baixar o Bootstrap 4, também com o NPM: $ npm install bootstrap –save**
 
-Tudo que estamos baixando vai ficar em uma pasta chamada node_modules, que é do NPM. É essa pasta que será o endereço das libs.
+Tudo que estamos baixando vai ficar em uma pasta chamada **node_modules**, que é do NPM. É essa pasta que será o endereço das libs.
 
 Vamos aproveitar a marcação do Hello World, e mudar só as referências do Bootstrap, do jQuery e do Popper.js.
 
 Só que nesse caso vamos utilizar os arquivos locais (que baixamos pelo NPM), ao invés de utilizarmos os links das CDN’s:
 
-
+````html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -137,6 +122,7 @@ Só que nesse caso vamos utilizar os arquivos locais (que baixamos pelo NPM), ao
     </body>
 
 </html>
+````
 
 Agora, essa página irá servir como template inicial para as outras páginas.
 
@@ -147,38 +133,40 @@ Se desejar, pode mudar os endereços das libs, caso queira colocar em outra past
 O importante aqui é que elas sejam carregadas na mesma ordem que estão, e que o endereço esteja correto.
 
 
-Entendendo os links e scripts
+## ENTENDENDO OS LINKS E SCRIPTS
 
 Referencia do arquivo CSS do nosso bootstrap
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-</html>
+````HTML
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    </html>
 
-Sem esse link ou se o caminho estiver errado o bootstrap não vai funcionar.
+    Sem esse link ou se o caminho estiver errado o bootstrap não vai funcionar.
 
-Referencia ao Jquery, Popper.js e aos plugins do bootstrap
+    Referencia ao Jquery, Popper.js e aos plugins do bootstrap
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </html>
+````
 
-O jQuery semper deve vir antes dos outros JS. O Bootstrap depende dele e do Popper.js para funcionar.
+- O **jQuery** semper deve vir antes dos outros JS. O **Bootstrap** depende dele e do **Popper.js** para funcionar.
 
-O Popper.js é uma biblioteca JavaScript que tem a função de posicionar elementos como menus, tooltips e popovers.
+- O **Popper.js** é uma biblioteca JavaScript que tem a função de posicionar elementos como menus, tooltips e popovers.
 
-Por fim, observe que eu coloquei as bibliotecas Javascript por último no HTML – isso é uma boa prática para que a página carregue mais rápido.
+- Por fim, observe que eu coloquei as bibliotecas Javascript por último no HTML – **isso é uma boa prática para que a página carregue mais rápido**.
 
-Na pasta CSS, estão todos os arquivos de estilo visuais do bootstrap e dos componentes. Para usar tudo que o bootstrap tem, é só você importar o arquivo bootstrap.css, ou o bootstrap.min.css
+- Na pasta CSS, estão todos os arquivos de estilo visuais do bootstrap e dos componentes. Para usar tudo que o bootstrap tem, é só você importar o arquivo **bootstrap.css**, ou o **bootstrap.min.css**
 
-Na pasta JS, ficam os arquivos com as funções dos componentes do bootstrap, como os Menus, por exemplo. Para usar todos os componentes que o bootstrap tem, é só importar o arquivo bootstrap.js ou bootstrap.min.js
+- Na pasta JS, ficam os arquivos com as funções dos componentes do bootstrap, como os Menus, por exemplo. Para usar todos os componentes que o bootstrap tem, é só importar o arquivo **bootstrap.js** ou **bootstrap.min.js**
 
-Por fim cada pasta possui uma versão padrão (os arquivos .css e .js) e uma versão "minificada" (os arquivos .min.css e .min.js) de cada script.
+- Por fim cada pasta possui uma versão padrão **(os arquivos .css e .js)** e uma versão **"minificada" (os arquivos .min.css e .min.js)** de cada script.
 
-Devemos usar a versão "minificada" (ou minified) quando for colocar seu projeto online, ou seja, em produção. Os arquivos minified como o proprio nome sugere, é bem menor que o padrão, e econimiza bastante na utilização de banda.
+- Devemos usar a versão **"minificada" (ou minified)** quando for colocar seu projeto online, ou seja, em produção. Os arquivos minified como o proprio nome sugere, é bem menor que o padrão, e econimiza bastante na utilização de banda.
 
-Agora eu tenho um framework muito poderoso em mãos, daqui para frente, você pode começar a trabalhar com os outros componentes disponíveis do Bootstrap. 
+- Agora eu tenho um framework muito poderoso em mãos, daqui para frente, você pode começar a trabalhar com os outros componentes disponíveis do Bootstrap. 
